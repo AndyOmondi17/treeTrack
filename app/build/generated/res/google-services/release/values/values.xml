@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">536714443536-k3sibhkhgkg9kctng23toqbhoc46a942.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://treemapping-261009.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">536714443536</string>
+    <string name="google_api_key" translatable="false">AIzaSyDaFKMLFaLcb-SHvip9WsSPsR_XE0Y0GxI</string>
+    <string name="google_app_id" translatable="false">1:536714443536:android:9bfd7a3ee4690d905bc395</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDaFKMLFaLcb-SHvip9WsSPsR_XE0Y0GxI</string>
+    <string name="google_storage_bucket" translatable="false">treemapping-261009.appspot.com</string>
+    <string name="project_id" translatable="false">treemapping-261009</string>
+</resources>

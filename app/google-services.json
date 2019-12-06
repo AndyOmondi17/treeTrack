@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "536714443536",
+    "firebase_url": "https://treemapping-261009.firebaseio.com",
+    "project_id": "treemapping-261009",
+    "storage_bucket": "treemapping-261009.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536714443536:android:9bfd7a3ee4690d905bc395",
+        "android_client_info": {
+          "package_name": "com.example.capstone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536714443536-k4g5uhkmvrs53ra6ki1cj2t0ss9kjom4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.capstone",
+            "certificate_hash": "8950677d16e822f102cbd9f980e0b173d17d5bf9"
+          }
+        },
+        {
+          "client_id": "536714443536-k3sibhkhgkg9kctng23toqbhoc46a942.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaFKMLFaLcb-SHvip9WsSPsR_XE0Y0GxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536714443536-k3sibhkhgkg9kctng23toqbhoc46a942.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

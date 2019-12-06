@@ -1,10 +1,9 @@
 package com.example.capstone;
-
-
 import android.os.Bundle;
-
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import androidx.fragment.app.FragmentActivity;
-
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -12,8 +11,8 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Map extends FragmentActivity implements OnMapReadyCallback {
-
+public class MainActivity extends FragmentActivity implements OnMapReadyCallback {
+    private GoogleMap mMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -27,7 +26,7 @@ public class Map extends FragmentActivity implements OnMapReadyCallback {
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-
+        mMap = googleMap;
         LatLng arabukoSokoke = new LatLng(-3.338800,39.909806);
         googleMap.addMarker(new MarkerOptions().position(arabukoSokoke).title("arabukoSokoke"));
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(arabukoSokoke));
@@ -44,7 +43,31 @@ public class Map extends FragmentActivity implements OnMapReadyCallback {
         googleMap.addMarker(new MarkerOptions().position(karuraForest).title("karuraForest"));
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(arabukoSokoke));
 
-
-
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.map_options, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Change the map type based on the user's selection.
+        switch (item.getItemId()) {
+            case R.id.normal_map:
+                mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+                return true;
+            case R.id.hybrid_map:
+                mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+                return true;
+            case R.id.satellite_map:
+                mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+                return true;
+            case R.id.terrain_map:
+                mMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

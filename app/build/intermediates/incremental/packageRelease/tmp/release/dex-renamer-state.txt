@@ -1,0 +1,4 @@
+#Fri Dec 06 11:24:07 EAT 2019
+base.0=/home/andy/AndroidStudioProjects/Capstone/app/build/intermediates/dex/release/mergeDexRelease/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
