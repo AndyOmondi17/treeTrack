@@ -126,8 +126,8 @@ public class Sign_Up extends AppCompatActivity implements View.OnClickListener{
         return isGoodEmail;
     }
 
-    private boolean isValidName(String name) {
-        if (name.equals("")) {
+    private boolean isValidName(String name){
+        if (name.equals("")){
             mName.setError("Please enter your name");
             return false;
         }
@@ -138,7 +138,7 @@ public class Sign_Up extends AppCompatActivity implements View.OnClickListener{
         if (password.length() < 6) {
             mPassword.setError("Please create a password containing at least 6 characters");
             return false;
-        } else if (!password.equals(confirmPassword)) {
+        }else if (!password.equals(confirmPassword)){
             mPassword.setError("Passwords do not match");
             return false;
         }
